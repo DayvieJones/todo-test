@@ -1,3 +1,4 @@
+import "./TodoItem.css";
 import CheckBox from "../../../../checkbox/Checkbox";
 import Button from "../../../../button/Button";
 
@@ -13,7 +14,7 @@ function TodoItem({ todoItem, handleChangeCheckbox, deleteTodoItemFromList }) {
   }
 
   return (
-    <div>
+    <div class="todo-item">
       <CheckBox
         id={todoItem.id}
         checked={todoItem.done}
@@ -21,7 +22,7 @@ function TodoItem({ todoItem, handleChangeCheckbox, deleteTodoItemFromList }) {
         handleChangeCheckbox={handleChangeCheckboxEvent}
       />
       <Button
-        buttonContent={"Löschen"}
+        buttonContent={"Delete"}
         handleButtonClickEvent={handleDeleteTodoItem}
       />
     </div>

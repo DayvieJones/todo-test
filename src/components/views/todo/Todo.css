@@ -1,3 +1,6 @@
 #todo-view {
-  background-color: aquamarine;
+  background-color: var(--tertiary);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
 }

@@ -1,3 +1,4 @@
+import "./TodoList.css";
 import TodoHeader from "../todoheader/TodoHeader";
 import TodoBody from "../todobody/TodoBody";
 import { useState } from "react";
@@ -27,7 +28,7 @@ function TodoList({}) {
   }
 
   return (
-    <div>
+    <div class="todo-list">
       <TodoHeader addTodoItemToList={addTodoItemToList} />
       <TodoBody
         todos={todos}

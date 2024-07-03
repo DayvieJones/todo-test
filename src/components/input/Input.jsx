@@ -1,6 +1,12 @@
+import "./Input.css";
 function Input({ inputValue, handleInputChangeEvent }) {
   return (
-    <input type="text" onChange={handleInputChangeEvent} value={inputValue} />
+    <input
+      placeholder="Enter here your ToDo's"
+      type="text"
+      onChange={handleInputChangeEvent}
+      value={inputValue}
+    />
   );
 }
 
