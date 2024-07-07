@@ -5,7 +5,7 @@ import { useState } from "react";
 
 function TodoList({}) {
   const [todos, setTodos] = useState([
-    { id: Math.random(), content: "Coden", done: false },
+    // { id: Math.random(), content: "Coden", done: false },
   ]);
 
   //Checkbox change Event

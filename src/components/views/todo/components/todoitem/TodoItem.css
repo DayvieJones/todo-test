@@ -7,3 +7,11 @@
   border-radius: 5px;
   box-shadow: 0px 0px 10px 0px var(--dark-shade-shadow);
 }
+
+.todo-item.done {
+  background-color: gray;
+}
+
+label.done {
+  text-decoration: line-through;
+}

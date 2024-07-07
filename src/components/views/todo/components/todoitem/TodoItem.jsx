@@ -8,13 +8,12 @@ function TodoItem({ todoItem, handleChangeCheckbox, deleteTodoItemFromList }) {
   }
 
   function handleChangeCheckboxEvent(event) {
-    const uptadedTodoItem = { ...todoItem };
-    uptadedTodoItem.done = event.target.checked;
-    handleChangeCheckbox(uptadedTodoItem);
+    const updatedTodoItem = { ...todoItem, done: event.target.checked };
+    handleChangeCheckbox(updatedTodoItem);
   }
 
   return (
-    <div class="todo-item">
+    <div className={`todo-item ${todoItem.done ? "done" : ""}`}>
       <CheckBox
         id={todoItem.id}
         checked={todoItem.done}
