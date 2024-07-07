@@ -4,9 +4,7 @@ import TodoBody from "../todobody/TodoBody";
 import { useState } from "react";
 
 function TodoList({}) {
-  const [todos, setTodos] = useState([
-    // { id: Math.random(), content: "Coden", done: false },
-  ]);
+  const [todos, setTodos] = useState([]);
 
   //Checkbox change Event
   function handleChangeCheckbox(todoItem) {
