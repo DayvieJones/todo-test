@@ -12,6 +12,6 @@
   background-color: gray;
 }
 
-label.done {
+.done label {
   text-decoration: line-through;
 }

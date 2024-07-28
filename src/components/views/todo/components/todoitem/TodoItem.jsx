@@ -13,7 +13,7 @@ function TodoItem({ todoItem, handleChangeCheckbox, deleteTodoItemFromList }) {
   }
 
   return (
-    <div className={`todo-item ${todoItem.done ? "done" : ""}`}>
+    <div className={`todo-item${todoItem.done ? " done" : ""}`}>
       <CheckBox
         id={todoItem.id}
         checked={todoItem.done}
